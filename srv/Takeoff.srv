@@ -1,0 +1,7 @@
+#Service used for requesting a takeoff to the state machine and
+#to control its flow.
+
+int8        altitude         # Altitude for takeoff
+---
+bool        response_code   # Response true if all good, false if an error
+string      response_msg    # Response message containing information

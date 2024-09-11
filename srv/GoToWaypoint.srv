@@ -1,0 +1,13 @@
+uint8 UNKNOWN = 0       # Do nothing
+uint8 SINGLE_PT = 1     # Goes to a single waypoint specified by position and yaw
+uint8 STOP = 2          # Goes to a single waypoint form a previous loaded mission specified by wp_index. STOP when it reaches the wp  
+uint8 NEXT_WP = 3       # Goes to the next waypoint on the list if it is not the last
+uint8 CONTINUE = 3      # Follows a mission previously loaded starting from waypoint wp_index
+
+uint8 mode
+geometry_msgs/Point position
+float64 yaw
+uint16 wp_index
+---
+bool success
+string message
