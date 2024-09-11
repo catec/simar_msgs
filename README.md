@@ -21,15 +21,15 @@ The following table describes the services implemented in SIMAR packages.
 
 ### USE Packages
 
-| Services name | Description |
-| ------------- | ----------- |
-| `connectServiceCB` | Connects to the camera. |
-| `captureServiceCB` | Captures an image. |
-| `recordingStartServiceCB` | Starts video recording. |
-| `recordingStopServiceCB` | Stops video recording. |
-| `zoom(int)` | Controls zoom for thermal and visible cameras. |
-| `zoomInServiceCB` / `zoomOutServiceCB` | Controls camera zoom. |
-| `setEthStreamServiceCB` / `getEthStreamServiceCB` |  Manages Ethernet stream service. |
-| `getExtTempServiceCB` | Gets the extreme temperature data from the camera. |
+| Services name | Type | Description |
+| ------------- | ----------- | ----------- |
+| /simar/visual_payload/capture               | [std_srvs/Trigger](https://docs.ros.org/en/noetic/api/std_srvs/html/srv/Trigger.html)           | Triggers the capture of an image from the camera.                           |
+| /simar/visual_payload/recording_start       | [std_srvs/Trigger](https://docs.ros.org/en/noetic/api/std_srvs/html/srv/Trigger.html)           | Starts recording video from the camera.                                     |
+| /simar/visual_payload/recording_stop        | [std_srvs/Trigger](https://docs.ros.org/en/noetic/api/std_srvs/html/srv/Trigger.html)           | Stops recording video from the camera.                                      |
+| /simar/visual_payload/zoom_in               | [std_srvs/Trigger](https://docs.ros.org/en/noetic/api/std_srvs/html/srv/Trigger.html)           | Zooms in the camera's field of view.                                        |
+| /simar/visual_payload/zoom_out              | [std_srvs/Trigger](https://docs.ros.org/en/noetic/api/std_srvs/html/srv/Trigger.html)           | Zooms out the camera's field of view.                                       |
+| /simar/visual_payload/set_eth_stream        | [simar_wirispro_driver/CameraEthStreamService](#)                                             | Sets the Ethernet stream status (TRUE/FALSE).                               |
+| /ros_gremsy/goal                            | [ros_gremsy/GimbalPos.srv](https://github.com/alemuva2001/ros_gremsy/blob/master/gremsy_base/srv/GimbalPos.srv) | Controls the gimbal’s orientation.                             |
+| /ros_gremsy/mode                            | [ros_gremsy/GimbalMode.srv](https://github.com/alemuva2001/ros_gremsy/blob/master/gremsy_base/srv/GimbalMode.srv)                   | Sets the gimbal’s operating mode .            |
 
 

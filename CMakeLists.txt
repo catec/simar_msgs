@@ -9,7 +9,7 @@ find_package(catkin REQUIRED
    COMPONENTS
       std_msgs
       geometry_msgs
-      message_generation
+      message_generation   
 )
 
 find_package(catkin REQUIRED COMPONENTS
@@ -24,9 +24,9 @@ find_package(catkin REQUIRED COMPONENTS
 
 add_message_files(DIRECTORY msg)
 
-# add_service_files(DIRECTORY srv)
+add_service_files(DIRECTORY srv)
 
-generate_messages(DEPENDENCIES std_msgs)
+generate_messages(DEPENDENCIES std_msg geometry_msgs)
 
 ###################################
 ## CATKIN specific configuration ##
