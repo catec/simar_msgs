@@ -1,0 +1,3 @@
+nav_msgs/Odometry local_odom
+bool claw_state
+bool wheel_train_state

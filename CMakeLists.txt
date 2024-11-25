@@ -9,13 +9,16 @@ find_package(catkin REQUIRED
    COMPONENTS
       std_msgs
       geometry_msgs
-      message_generation   
+      message_generation
+      nav_msgs
 )
 
 find_package(catkin REQUIRED COMPONENTS
    std_msgs
    geometry_msgs
    message_generation
+   sensor_msgs
+   nav_msgs
 )
 
 ################################################
@@ -26,14 +29,15 @@ add_message_files(DIRECTORY msg)
 
 add_service_files(DIRECTORY srv)
 
-generate_messages(DEPENDENCIES std_msg geometry_msgs)
+generate_messages(DEPENDENCIES std_msgs geometry_msgs nav_msgs)
 
 ###################################
 ## CATKIN specific configuration ##
 ###################################
 
 catkin_package(
-   CATKIN_DEPENDS message_runtime
+   CATKIN_DEPENDS message_runtime std_msgs geometry_msgs sensor_msgs nav_msgs
+   DEPENDS
 )
 
 #############
