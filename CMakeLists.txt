@@ -25,7 +25,11 @@ find_package(catkin REQUIRED COMPONENTS
 ## Declare ROS messages, services and actions ##
 ################################################
 
-add_message_files(DIRECTORY msg)
+add_message_files(DIRECTORY msg
+  FILES
+  VP_logger.msg
+  )
+
 
 add_service_files(DIRECTORY srv
 FILES
