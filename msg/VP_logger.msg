@@ -18,7 +18,10 @@ string thermal_filename
 # images: 0
 # videos: 1
 bool media_type
-
+## start_stop
+# start: 0
+# stop: 1
+bool start_stop
 # For each mission we will have a counter that will be the group
 # for each capture 
 int8 group
