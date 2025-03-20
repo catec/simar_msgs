@@ -14,7 +14,8 @@ The following table describes the messages defined in this package.
 | [simar_msgs/PayloadAction](msg/PayloadAction.msg) | Message used to send actions to the availble payloads. |
 | [simar_msgs/ExtremeTemps](msg/ExtremeTemps.msg) | Message used to publish the extreme temperature data.|
 | [simar_msgs/PixelTemp](msg/PixelTemp.msg) | Message used to show the temperature of a pixel. |
-
+| [simar_msgs/PipeDetectedStamped](msg/PipeDetectedStamped.msg) | Message used to describe a detected pipe |
+| [simar_msgs/PipeDetectedStampedArray](msg/PipeDetectedStampedArray.msg) | Message used to describe an array of detected pipes |
 
 ## Services description
 The following table describes the services implemented in SIMAR packages.
