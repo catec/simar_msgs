@@ -5,9 +5,9 @@ uint8 NEXT_WP = 3       # Goes to the next waypoint on the list if it is not the
 uint8 CONTINUE = 3      # Follows a mission previously loaded starting from waypoint wp_index
 
 uint8 mode
-geometry_msgs/Point position
-float64 yaw
-uint16 wp_index
+geometry_msgs/Point position    # Requested position in meters
+float64 yaw                     # Requested yaw in degrees
+uint16 wp_index                 # Requested single point to go from previously stored flight plan
 ---
 bool success
 string message

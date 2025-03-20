@@ -1,7 +1,6 @@
-#Service used for requesting a takeoff to the state machine and
-#to control its flow.
+#Service used for requesting to change the payload
 
-float64        altitude         # Altitude for takeoff
+string       payload         # Values allowed are UAV VISUAL PEC XR
 ---
 bool        response_code   # Response true if all good, false if an error
 string      response_msg    # Response message containing information
