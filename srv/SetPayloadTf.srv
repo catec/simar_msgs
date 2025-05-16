@@ -1,0 +1,5 @@
+string payload
+string mode  # "attached", "landed", "shutdown"
+---
+bool success
+string message
