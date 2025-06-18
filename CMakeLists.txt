@@ -31,6 +31,7 @@ add_message_files(DIRECTORY msg
   PipeDetectedStamped.msg
   PipeDetectedStampedArray.msg
   WayPoint.msg
+  State.msg
   )
 
 
